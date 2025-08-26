@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>elevvo-Task 5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto flex flex-col">
+      <section
+        id="hero"
+        class="hero min-h-screen bg-gradient-to-r from-indigo-500 to-teal-400 flex flex-col"
+      >
+        <div
+          class="navbar mb-6 w-full px-6 py-5 flex justify-between items-center"
+        >
+          <div class="logo">
+            <img src="./image/logo.png" class="w-12 h-12 cursor-pointer" />
+          </div>
+          <div class="links text-white">
+            <ul
+              class="flex justify-center items-center gap-4 list-none lg:gap-10"
+            >
+              <a
+                href="#hero"
+                class="text-sm sm:text-base md:text-lg hover:text-black transition-colors duration-300"
+                >Home</a
+              >
+              <a
+                href="#features"
+                class="text-sm sm:text-base md:text-lg hover:text-black transition-colors duration-300"
+                >Features</a
+              >
+              <a
+                href="#testimonials"
+                class="text-sm sm:text-base md:text-lg hover:text-black transition-colors duration-300"
+                >Testimonials</a
+              >
+              <a
+                href="#pricing"
+                class="text-sm sm:text-base md:text-lg hover:text-black transition-colors duration-300"
+                >Pricing</a
+              >
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="flex-1 flex flex-col justify-center items-center text-white px-6"
+        >
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center max-w-4xl"
+          >
+            Secure Cloud Storage for All Your Files
+          </h1>
+          <p class="text-lg md:text-xl font-semibold text-center max-w-2xl">
+            Store, access, and share your files anytime, anywhere — safe and
+            fast.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="features"
+        class="py-20 px-10 flex flex-col items-center bg-gray-100 gap-10 text-gray-900"
+      >
+        <h2 class="text-3xl font-bold mb-10 text-center">Why Choose Us?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-5">
+          <div
+            class="bg-white rounded-lg shadow p-12 hover:shadow-xl hover:translate-y-1 transition-all duration-300 border-2 border-blue-500"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="M120-160v-160h720v160H120Zm80-40h80v-80h-80v80Zm-80-440v-160h720v160H120Zm80-40h80v-80h-80v80Zm-80 280v-160h720v160H120Zm80-40h80v-80h-80v80Z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-center my-5">
+              Unlimited Storage
+            </h3>
+            <p class="text-gray-700">Upload and organize without limits</p>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow p-12 hover:shadow-xl hover:translate-y-1 transition-all duration-300 border-2 border-blue-500"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="M480-380Zm80 220H260q-91 0-155.5-63T40-377q0-78 47-139t123-78q25-92 100-149t170-57q106 0 184.5 68.5T757-560q-21 0-40.5 4.5T679-543q-8-75-65-126t-134-51q-83 0-141.5 58.5T280-520h-20q-58 0-99 41t-41 99q0 58 41 99t99 41h300v80Zm120 0q-17 0-28.5-11.5T640-200v-120q0-17 11.5-28.5T680-360v-40q0-33 23.5-56.5T760-480q33 0 56.5 23.5T840-400v40q17 0 28.5 11.5T880-320v120q0 17-11.5 28.5T840-160H680Zm40-200h80v-40q0-17-11.5-28.5T760-440q-17 0-28.5 11.5T720-400v40Z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-center my-5">
+              Secure Encryption
+            </h3>
+            <p class="text-gray-700">End-to-end file protection</p>
+          </div>
+
+          <div
+            class="bg-white rounded-lg shadow p-12 hover:shadow-xl hover:translate-y-1 transition-all duration-300 border-2 border-blue-500"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="M280-320h260q42 0 71-29.5t29-71.5q0-42-30-71t-72-29q-8-51-47-85t-91-34q-41 0-75 22t-51 59q-48 2-81 36.5T160-440q0 50 35 85t85 35Zm0-80q-17 0-28.5-11.5T240-440q0-17 11.5-28.5T280-480h50v-10q0-29 20.5-49.5T400-560q29 0 49.5 20.5T470-490v50h70q8 0 14 6t6 14q0 8-6 14t-14 6H280Zm0 360v-80h60v-80H120q-33 0-56.5-23.5T40-280v-400q0-33 23.5-56.5T120-760h560q33 0 56.5 23.5T760-680v400q0 33-23.5 56.5T680-200H460v80h60v80H280Zm560-360v-440H200v-80h640q33 0 56.5 23.5T920-840v440h-80ZM120-280h560v-400H120v400Zm280-200Z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-center my-5">Cross-Platform</h3>
+            <p class="text-gray-700">Works on web, mobile, and desktop</p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="testimonials"
+        class="py-20 px-10 flex flex-col items-center gap-10 text-gray-900 bg-white"
+      >
+        <h2 class="text-3xl font-bold mb-10 text-center">Testimonials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+          <div
+            class="bg-gray-100 rounded-lg shadow p-12 hover:shadow-xl hover:translate-y-1 transition-all duration-300 border-2 border-blue-500"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-center my-5">
+              “CloudBox makes teamwork effortless.”
+            </h3>
+            <p class="text-gray-700">Sarah K.</p>
+          </div>
+          
+          <div
+            class="bg-gray-100 rounded-lg shadow p-12 hover:shadow-xl hover:translate-y-1 transition-all duration-300 border-2 border-blue-500"
+          >
+            <div class="flex justify-center mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-center my-5">
+              “Finally, secure storage I can trust.”
+            </h3>
+            <p class="text-gray-700">Ahmed R.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section
+        id="pricing"
+        class="py-20 px-10 flex flex-col items-center gap-10 text-gray-900"
+      >
+        <h2 class="text-3xl font-bold mb-10 text-center">Choose Your Plan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
+          <div
+            class="flex flex-col items-center justify-center gap-4 bg-white px-8 py-12 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border-2 border-blue-500"
+          >
+            <h3 class="text-4xl font-bold text-center">Free</h3>
+            <div
+              class="mt-3 mb-6 text-center flex justify-center items-baseline gap-2"
+            >
+              <p class="text-xl text-gray-700">$</p>
+              <h3 class="text-6xl font-bold">0</h3>
+              <p class="text-xl text-gray-500">/month</p>
+            </div>
+            <div class="space-y-3 w-full">
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">5 GB storage</span>
+              </p>
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">basic sharing</span>
+              </p>
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">Mobile app access</span>
+              </p>
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">Email support</span>
+              </p>
+            </div>
+            <a
+              href="#contact"
+              class="mt-8 w-full text-center bg-gradient-to-r from-indigo-500 to-teal-400 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300"
+              >Get Started</a
+            >
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center gap-4 bg-white px-8 py-12 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border-2 border-orange-500"
+          >
+            <h3 class="text-4xl font-bold text-center">Pro</h3>
+            <div
+              class="mt-3 mb-6 text-center flex justify-center items-baseline gap-2"
+            >
+              <p class="text-xl text-gray-700">$</p>
+              <h3 class="text-6xl font-bold">9</h3>
+              <p class="text-xl text-gray-500">/month</p>
+            </div>
+            <div class="space-y-3 w-full">
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">1 TB</span>
+              </p>
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">priority support</span>
+              </p>
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">Progress analytics</span>
+              </p>
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">advanced features</span>
+              </p>
+            </div>
+            <a
+              href="#contact"
+              class="mt-8 w-full text-center bg-orange-500 text-white px-8 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-300"
+              >Free Trial</a
+            >
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center gap-4 bg-white px-8 py-12 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border-2 border-blue-500"
+          >
+            <h3 class="text-4xl font-bold text-center">Team</h3>
+            <div
+              class="mt-3 mb-6 text-center flex justify-center items-baseline gap-2"
+            >
+              <p class="text-xl text-gray-700">$</p>
+              <h3 class="text-6xl font-bold">29</h3>
+              <p class="text-xl text-gray-500">/month</p>
+            </div>
+            <div class="space-y-3 w-full">
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">Everything in Pro</span>
+              </p>
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">Unlimited storage</span>
+              </p>
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">admin tools</span>
+              </p>
+              <p class="text-sm flex items-center">
+                <i class="fas fa-check text-green-500 mr-3"></i>
+                <span class="text-gray-700">collaboration suite</span>
+              </p>
+            </div>
+            <a
+              href="#contact"
+              class="mt-8 w-full text-center bg-gradient-to-r from-indigo-500 to-teal-400 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer
+        id="contact"
+        class="py-20 px-20 flex flex-col items-center gap-10 text-gray-900 bg-slate-800"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-full max-w-6xl"
+        >
+          <div class="flex flex-col items-start justify-center p-6 w-full">
+            <div class="flex items-center gap-2 text-white mb-5">
+              <img src="./image/logo.png" class="w-12">
+              <span class="text-white text-3xl font-bold">Cloudy</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-start justify-center p-6 w-full">
+            <span class="text-white text-3xl font-bold mb-5">Contact</span>
+
+            <p
+              class="flex items-center text-lg font-semibold text-gray-400 mt-2 w-full gap-2"
+            >
+              <i class="fas fa-envelope"></i> hello@clody.com
+            </p>
+            <p
+              class="flex items-center text-lg font-semibold text-gray-400 mt-2 w-full gap-2"
+            >
+              <i class="fas fa-phone"></i> +20 111 222 3333
+            </p>
+            <p
+              class="flex items-center text-lg font-semibold text-gray-400 mt-2 w-full gap-2"
+            >
+              <i class="fas fa-map-marker-alt"></i> 123 Giza St, Giza
+            </p>
+          </div>
+
+          <div class="flex flex-col items-start justify-center p-6 w-full">
+            <span class="text-white text-3xl font-bold mb-5">Follow Us</span>
+            <p
+              class="flex items-center text-lg font-semibold text-gray-400 mt-2 w-full gap-2"
+            >
+              <i class="fab fa-facebook"></i> Facebook
+            </p>
+            <p
+              class="flex items-center text-lg font-semibold text-gray-400 mt-2 w-full gap-2"
+            >
+              <i class="fab fa-twitter"></i> Twitter
+            </p>
+            <p
+              class="flex items-center text-lg font-semibold text-gray-400 mt-2 w-full gap-2"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
